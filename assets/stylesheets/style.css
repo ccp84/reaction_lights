@@ -1,7 +1,9 @@
 body {
+    height: 100%;
     margin: 5px;
-    background-color: #ba8602;
-    background: url(assets\images\tablet_background.webp);
+    background-image: url("../images/mobile_background.webp");
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
