@@ -6,10 +6,9 @@ body {
 }
 
 #game {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
 }
 
 .light {
@@ -43,20 +42,18 @@ body {
     }
 
     #game {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 /* Desktop media query */
 @media only screen and (min-width: 992px) {
     #game {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
 }
