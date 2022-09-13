@@ -31,14 +31,32 @@ body {
 /* Mobile media query */
 @media only screen and (max-width: 600px) {
 
+    .mobile_hide {
+        display: none;
+    }
 }
 
 /* Tablet media query */
 @media only screen and (min-width: 600px) {
+    .tablet_hide {
+        display: none;
+    }
 
+    #game {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 /* Desktop media query */
 @media only screen and (min-width: 992px) {
+    #game {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
 
 }
