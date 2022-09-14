@@ -6,13 +6,13 @@ body {
     background-repeat: repeat-y;
     background-size: cover;
 }
-
+/*Main game canvas*/
 #game {
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
 }
-
+/*Styling for light button divs when 'off'*/
 .light {
     height: 10rem;
     width: 10rem;
@@ -20,6 +20,12 @@ body {
     background-color: red;
     border: 1px red;
     border-radius: 50%;
+}
+
+/*Class for JS to use to turn light button divs to 'on'*/
+.light_on {
+    background-color: lightgreen;
+    border: green;
 }
 
 footer {
