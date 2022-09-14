@@ -44,6 +44,9 @@ footer {
 }
 
 /* Tablet media query */
+body {
+    background-image: url("../images/tablet_background.webp");
+}
 @media only screen and (min-width: 600px) {
     .tablet_hide {
         display: none;
@@ -67,6 +70,9 @@ footer {
 
 /* Desktop media query */
 @media only screen and (min-width: 992px) {
+    body {
+        background-image: url("../images/desktop_background.webp");
+    }
     #game {
         display: grid;
         place-items: center;

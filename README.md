@@ -36,6 +36,15 @@ The desktop game will be the most advanced version with a 3 x 3 button grid, max
 
 ## Project Development
 
+### Game Canvas
+
+The mobile game has a slimmer background image, with a vertical single column CSS grid system displaying only stacked 2 buttons. For this a media query has been used to hide the remainder of the buttons on screens 600px and smaller. The mobile game is the standard display and is the base game developed with the larger verions developed from this initial 2 button version. 
+
+The tablet game is designed on a larger 2 column CSS grid, displaying 4 buttons. This is achieved by changing the grid for a media query when the screen width is a minimum of 600px. 
+
+The full desktop game features a 3 column CSS grid and 9 buttons. This view appears for screen sizes over 992px. 
+
+
 ## Technologies Used
 
 ## Testing
