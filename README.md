@@ -44,9 +44,18 @@ The tablet game is designed on a larger 2 column CSS grid, displaying 4 buttons.
 
 The full desktop game features a 3 column CSS grid and 9 buttons. This view appears for screen sizes over 992px. 
 
+### Timer Function
 
+The timer function in the game is used to randomise how long is it between each state change for the lights. This is achieved by using `Math.random()`, and multiplying this by 2000 to get a time up to 2 seconds. There was no need to turn this into a whole number as it does not matter for the game play. 
 ## Technologies Used
 
+* HTML
+* CSS
+* JavaScript
+* GitHub
+* Chrome DevTools
+* Canva
+* Paint.NET
 ## Testing
 
 ## Deployment
