@@ -62,3 +62,5 @@ The timer function in the game is used to randomise how long is it between each 
 
 ## Credits
 
+* The `setTimeout()` code for timing of switching lights on and off was used from [Stack Overflow](https://stackoverflow.com/questions/17883692/how-to-set-time-delay-in-javascript).
+

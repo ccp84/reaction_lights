@@ -23,4 +23,11 @@ function lightOn(lights) {
   let lightNumber = Math.floor(Math.random() * lights.length);
   let activeLight = lights[lightNumber];
   
+  activeLight.classlist.add('light_on');
+  //The timeout feature was researched on StackOverflow - see link in credits
+  //Turn light off again
+  setTimeout(function() {
+    timeout = lightTimer();
+    activeLight.classlist.remove('light_on');
+  },timeOut);
 }
