@@ -1,8 +1,18 @@
-//Get a list of lights
-const lights = document.querySelectorAll('.light');
+  //Get a list of lights
+  const lights = document.querySelectorAll('.light');
 
 //Wait for DOM content to be loaded
 document.addEventListener('DOMContentLoaded', function () {
+  //Add event listeners to each light
+  
+  for (let light of lights) {
+    light.addEventListener('click', function() {
+      console.log("You clicked a button");
+    });
+  }
+
+
+
   //run the game once loaded
   lightOn();
 });
