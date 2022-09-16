@@ -1,27 +1,38 @@
-  //Get a list of lights
-  const lights = document.querySelectorAll('.light');
+//Get a list of lights
+const lights = document.querySelectorAll('.light');
 
 //Wait for DOM content to be loaded
 document.addEventListener('DOMContentLoaded', function () {
-  //Add event listeners to each light
-  
-  for (let light of lights) {
-    light.addEventListener('click', function() {
-      console.log("You clicked a button");
-    });
-  }
-
-
-
   //run the game once loaded
   lightOn();
+
+  //Add event listeners to each light
+  for (let light of lights) {
+    light.addEventListener('click', function () {
+      //Call the function to check if score should be incremented on click
+      if (light.classList.contains("light_on")) {
+        console.log("you clicked a green light");
+        addScore(light);
+      }
+    });
+  }
 });
+
+/* 
+* Scoring function increments score if class is equal to light_on when clicked
+*/
+function addScore() {
+  let currentScore = document.getElementById('score').innerText;
+  console.log(currentScore);
+}
+
 
 /*
  * Timer function used to randomise when the lights change from red to green between 1 and 3 seconds
  */
 let timer = 0;
 let timeOut = 0;
+
 function lightTimer() {
   timer = Math.random() * 3000;
   if (timer <= 1000) {
