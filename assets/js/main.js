@@ -21,8 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
 * Scoring function increments score if class is equal to light_on when clicked
 */
 function addScore() {
-  let currentScore = document.getElementById('score').innerText;
+  let currentScore = document.getElementById('score').innerHTML;
   console.log(currentScore);
+  currentScore ++;
+  console.log(currentScore);
+  document.getElementById('score').innerHTML = currentScore;
 }
 
 
