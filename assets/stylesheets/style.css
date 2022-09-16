@@ -15,8 +15,8 @@ body {
 
 /*Styling for light button divs when 'off'*/
 .light {
-    height: 10rem;
-    width: 10rem;
+    height: 5rem;
+    width: 5rem;
     margin: 10px;
     background-color: red;
     border: 3px solid black;
@@ -48,23 +48,35 @@ footer {
 /* Mobile media query */
 @media only screen and (max-width: 600px) {
 
-    .mobile_hide {
+    .light_tablet, .light_desktop {
         display: none;
     }
+    
 }
 
 /* Tablet media query */
-
-
 @media only screen and (min-width: 600px) {
     
     body {
         background-image: url("../images/tablet_background.webp");
-    }      
+    } 
+    
+    .light_mobile, .light_tablet {
+        display: block;
+    }
+
+    .light_desktop {
+        display: none;
+    }
 }
 
 /* Desktop media query */
 @media only screen and (min-width: 992px) {
+
+    .light_mobile, .light_tablet, .light_desktop {
+        display: block;
+    }
+    
     body {
         background-image: url("../images/desktop_background.webp");
     }
