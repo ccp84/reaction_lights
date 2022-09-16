@@ -69,6 +69,10 @@ The function to retun the light to red simply calls `activeLight.classList.remov
 
 `addScore` is triggered based on the `if` statement in the main game loading sequence. When a player hits a light whilst in the on state, `addScore` fetches the current number stored in the HTML element with the ID of score and increments it by 1, before writing it back to the inner HTML of that same element to display the updated score tally to the player on screen. 
 
+### Reset score function
+
+`resetScore` is triggered either when the player starts a new game, or when a player hits a red light during game play to set the score back to 0 again. The function fetches the current number stored in the HTML elements with the ID of score and over writes it with 0 before writing the new value back to the DOM. If `resetScore` was triggered by a red light hit, an alert is shown on screen to let the player know they hit a red light. 
+
 ## Technologies Used
 
 * HTML
