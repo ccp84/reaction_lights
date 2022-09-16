@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
         addScore(light);
         light.classList.remove('light_on');
       } else {
+        let finalScore = document.getElementById('score').innerHTML;
+        window.alert(`Oh no you hit a red light final score ${finalScore}`);
         resetScore();
       }
     });
