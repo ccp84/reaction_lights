@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
     light.addEventListener('click', function () {
       //Call the function to check if score should be incremented on click
       if (light.classList.contains("light_on")) {
-        console.log("you clicked a green light");
         addScore(light);
       }
     });
