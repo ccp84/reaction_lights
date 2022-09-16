@@ -13,17 +13,28 @@ document.addEventListener('DOMContentLoaded', function () {
       if (light.classList.contains("light_on")) {
         addScore(light);
         light.classList.remove('light_on');
+      } else {
+        resetScore();
       }
     });
   }
 });
 
 /* 
-* Scoring function increments score if class is equal to light_on when clicked
-*/
+ * Scoring function increments score if class is equal to light_on when clicked
+ */
 function addScore() {
   let currentScore = document.getElementById('score').innerHTML;
-  currentScore ++;
+  currentScore++;
+  document.getElementById('score').innerHTML = currentScore;
+}
+
+/*
+* Function to set score to zero again when a red light is clicked
+*/
+function resetScore() {
+  let currentScore = document.getElementById('score').innerHTML;
+  currentScore = 0;
   document.getElementById('score').innerHTML = currentScore;
 }
 
@@ -59,6 +70,10 @@ function lightOn() {
   }, timeOut);
 }
 
+
+/*
+ *Function to remove the light on status and re run the game sequence
+ */
 function lightOff(activeLight) {
   activeLight.classList.remove('light_on');
   lightOn();
