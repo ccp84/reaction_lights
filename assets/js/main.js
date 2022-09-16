@@ -22,12 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
 */
 function addScore() {
   let currentScore = document.getElementById('score').innerHTML;
-  console.log(currentScore);
   currentScore ++;
-  console.log(currentScore);
   document.getElementById('score').innerHTML = currentScore;
 }
-
 
 /*
  * Timer function used to randomise when the lights change from red to green between 1 and 3 seconds

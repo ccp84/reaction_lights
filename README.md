@@ -64,6 +64,11 @@ After an amount of time determined by the function `lightTimer`, `lightOff` is c
 ### Light off function
 
 The function to retun the light to red simply calls `activeLight.classList.remove('light_on');` and then once the game has been reset, calls the `lightOn` function to pick the next light to become active thus creating a game loop. 
+
+### Increment score function
+
+`addScore` is triggered based on the `if` statement in the main game loading sequence. When a player hits a light whilst in the on state, `addScore` fetches the current number stored in the HTML element with the ID of score and increments it by 1, before writing it back to the inner HTML of that same element to display the updated score tally to the player on screen. 
+
 ## Technologies Used
 
 * HTML

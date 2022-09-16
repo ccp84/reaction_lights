@@ -9,29 +9,33 @@ body {
 /*Main game canvas*/
 #game {
     display: grid;
-    grid-template-columns: 1fr;
     place-items: center;
+    grid-template-columns: 1fr 1fr;
 }
+
 /*Styling for light button divs when 'off'*/
 .light {
     height: 10rem;
     width: 10rem;
     margin: 10px;
     background-color: red;
-    border: 1px red;
+    border: 3px solid black;
     border-radius: 50%;
 }
 
 /*Class for JS to use to turn light button divs to 'on'*/
 .light_on {
     background-color: lightgreen;
-    border: green;
+    border: 3px solid green;
 }
 
 footer {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     place-items: center;
+    position: absolute;
+    bottom : 10px;
+    margin: 5px;
 }
 
 #score {
@@ -50,28 +54,13 @@ footer {
 }
 
 /* Tablet media query */
-body {
-    background-image: url("../images/tablet_background.webp");
-}
+
+
 @media only screen and (min-width: 600px) {
-    .tablet_hide {
-        display: none;
-    }
-
-    #game {
-        display: grid;
-        place-items: center;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        place-items: center;
-        position: absolute;
-        bottom : 10px;
-        margin: 5px;
-    }
+    
+    body {
+        background-image: url("../images/tablet_background.webp");
+    }      
 }
 
 /* Desktop media query */
