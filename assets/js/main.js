@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
  * Timer function used to randomise when the lights change from red to green between 1 and 3 seconds
  */
 let timer = 0;
-
+let timeOut = 0;
 function lightTimer() {
   timer = Math.random() * 3000;
   if (timer <= 1000) {
@@ -32,7 +32,6 @@ function lightOn() {
 
   //The timeout feature was researched on StackOverflow - see link in credits
   //Turn light off again
-  let timeOut = 0;
   setTimeout(function () {
     timeOut = lightTimer();
     lightOff(activeLight);
