@@ -48,10 +48,11 @@ The full desktop game features a 3 column CSS grid and 9 buttons. This view appe
 
 The `lightTimer` function in the game is used to randomise how long is it between each state change for the lights. This is achieved by using `Math.random()`, and multiplying this by 3000 to get a time up to 3 seconds. There was no need to turn this into a whole number as it does not matter for the game play. 
 In order to not have a 0 seconds delay between on and off states. Code is used to check if the random number produced is less than 1000 which is 1000ms or 1 second :
-`js
+```js
 if (timer <= 1000) {
     timer = 1000;
-  }`
+  }
+```
 If this is the case then the timer is set to 1 second.
 
 ### Light On Function (Main game play)
@@ -59,6 +60,10 @@ If this is the case then the timer is set to 1 second.
 Main game play is achieved by the `lightOn` function. This function first of all selects a random number from the lights node list which is called from the DOM and stored in the variable `lights`. It does this by using `Math.random` and multiplying that by `lights.length`. This time as the light needs to be an integer, `Math.floor` is also used. Next the random light div that has been selected is assigned to the variable `activeLight`, and the class `light_on` is added to turn it green. 
 
 After an amount of time determined by the function `lightTimer`, `lightOff` is called to remove the `light_on` class and return the light to red again. I used `setTimeOut` code from [Stack Overflow](https://stackoverflow.com/questions/17883692/how-to-set-time-delay-in-javascript) to implement the delay between turning the light on and off.
+
+### Light off function
+
+The function to retun the light to red simply calls `activeLight.classList.remove('light_on');` and then once the game has been reset, calls the `lightOn` function to pick the next light to become active thus creating a game loop. 
 ## Technologies Used
 
 * HTML
