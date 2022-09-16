@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
       //Call the function to check if score should be incremented on click
       if (light.classList.contains("light_on")) {
         addScore(light);
+        light.classList.remove('light_on');
       }
     });
   }
