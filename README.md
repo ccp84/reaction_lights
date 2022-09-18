@@ -1,7 +1,7 @@
 # PP2 - Reaction Lights by Cheryl Phillips 
 
 ## Concept
-Reaction Lights is a JavaScript game to test reaction speed. The user must react to on screen colour changes, however, any incorrect clicks will loose points. Score 10 points to win the game. 
+Reaction Lights is a JavaScript game to test reaction speed. The user must react to on screen colour changes, however, any incorrect clicks will end your winning streak. How high can you get your score count before you hit a red light?
 
 ## User Stories
 Visitors to the site must be able to :
@@ -14,7 +14,6 @@ Visitors to the site must be able to :
 * Rules to display on a separate page, easily accessed from the main page
 * Score to be displayed clearly at all times
 * Game mode to change depending on the device the game is being played on
-* Option to start a new game once the user has scored 10 points
 
 ## Wireframes
 
@@ -85,6 +84,23 @@ The function to retun the light to red simply calls `activeLight.classList.remov
 ## Testing
 
 ## Deployment
+
+The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the [GitHub repository](https://github.com/ccp84/reaction_lights), navigate to the Settings tab 
+  - From the source section drop-down menu, select the **Main** Branch, then click "Save".
+  - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found [here](https://ccp84.github.io/reaction_lights)
+
+### Local Deployment
+
+In order to make a local copy of this project, you can clone it. In your IDE Terminal, type the following command to clone my repository:
+
+- `git clone https://github.com/ccp84/reaction_lights.git`
+
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ccp84/reaction_lights)
 
 ## Credits
 

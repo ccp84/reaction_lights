@@ -72,7 +72,6 @@ function lightOn() {
   }, timeOut);
 }
 
-
 /*
  *Function to remove the light on status and re run the game sequence
  */
