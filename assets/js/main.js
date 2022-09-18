@@ -14,8 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
         addScore(light);
         light.classList.remove('light_on');
       } else {
+        //When a red light is hit, end the game and reset the score count
         let finalScore = document.getElementById('score').innerHTML;
-        window.alert(`Oh no you hit a red light final score ${finalScore}`);
+        window.alert(`Oh no you hit a red light. Final score ${finalScore}`);
         resetScore();
       }
     });
