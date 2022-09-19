@@ -11,7 +11,8 @@
     <header>
         <h1>Test Your Reaction</h1>
         <h2>How High Can You Score?</h2>
-    </header>    
+    </header> 
+    <!--Main game canvas - 4 lights on mobile, 8 on tablet, 9 on desktop-->   
     <main id="game">
         <div class="light light_mobile">     </div>
         <div class="light light_mobile">     </div>
@@ -23,16 +24,29 @@
         <div class="light light_tablet">     </div>
         <div class="light light_desktop">     </div>
     </main>
+    <!--Display score-->
     <section class="score_box">
         <div id="score_container">Score: <span id="score">0</span></div>
     </section>
+    <!--Buttons to start game and display rules-->
     <section class="game_buttons">
         <button id="start">Start Game</button>
         <button id="rules">Rules</button>
+        <!--Modal to have rules "pop up" over the top of the page.
+        The code for this has been found following tutorial on W3Schools at 
+        https://www.w3schools.com/howto/howto_css_modals.asp-->
+        <div id="rules_modal" class="modal">
+            <!--Modal Content-->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+            </div>
+        </div>
     </section>
     <footer>
 
     </footer>
+    <!--Call JavaScript file-->
     <script src="assets/js/main.js"></script>
 </body>
 </html>
