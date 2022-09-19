@@ -42,13 +42,13 @@ function resetScore() {
 }
 
 /*
- * Timer function used to randomise when the lights change from red to green between 1 and 3 seconds
+ * Timer function used to randomise when the lights change from red to green between 1 and 2 seconds
  */
 let timer = 0;
 let timeOut = 0;
 
 function lightTimer() {
-  timer = Math.random() * 3000;
+  timer = Math.random() * 2000;
   if (timer <= 1000) {
     timer = 1000;
   }
