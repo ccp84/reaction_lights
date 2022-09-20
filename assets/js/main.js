@@ -4,7 +4,10 @@ const lights = document.querySelectorAll('.light');
 //Wait for DOM content to be loaded
 document.addEventListener('DOMContentLoaded', function () {
   //run the game once loaded
-  lightOn();
+  let startButton = document.getElementById('start');
+  startButton.addEventListener('click', function() {
+    lightOn();
+  });
 
   //Add event listeners to each light
   for (let light of lights) {
