@@ -76,6 +76,10 @@ The function to retun the light to red simply calls `activeLight.classList.remov
 
 The rules for the game are designed as a modal popup. I used code from W3 schools to implement this feature, making changes to the styling to match the overall theme of the game. The original tutorial for this feature can be found [here](https://www.w3schools.com/howto/howto_css_modals.asp).
 
+### Start Button
+
+The game is not active upon loading the webpage, the user triggers this by selecting the start game button at the bottom of the page. There is an event listener attached to the start button that calls the `lighton()` function to start the game loop running. This allows the player some element of control over the game and gives a similar feel to not having music and sound instantly playing at you when you load a webpage, the lights of the game do not instantly start flashing upon loading the page for the first time for a better user experience.
+
 ## Technologies Used
 
 * HTML
