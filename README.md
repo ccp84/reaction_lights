@@ -45,14 +45,14 @@ The full desktop game features a 3 column CSS grid and 9 buttons. This view appe
 
 ### Timer Function
 
-The `lightTimer` function in the game is used to randomise how long is it between each state change for the lights. This is achieved by using `Math.random()`, and multiplying this by 3000 to get a time up to 3 seconds. There was no need to turn this into a whole number as it does not matter for the game play. 
-In order to not have a 0 seconds delay between on and off states. Code is used to check if the random number produced is less than 1000 which is 1000ms or 1 second :
+The `lightTimer` function in the game is used to randomise how long is it between each state change for the lights. This is achieved by using `Math.random()`, and multiplying this by 2000 to get a time up to 2 seconds. There was no need to turn this into a whole number as it does not matter for the game play. 
+In order to not have a 0 seconds delay between on and off states. Code is used to check if the random number produced is less than 500 which is 500ms or half a second :
 ```js
-if (timer <= 1000) {
-    timer = 1000;
+if (timer <= 500) {
+    timer = 500;
   }
 ```
-If this is the case then the timer is set to 1 second.
+If this is the case then the timer is set to 0.5 seconds.
 
 ### Light On Function (Main game play)
 
@@ -71,6 +71,10 @@ The function to retun the light to red simply calls `activeLight.classList.remov
 ### Reset score function
 
 `resetScore` is triggered either when the player starts a new game, or when a player hits a red light during game play to set the score back to 0 again. The function fetches the current number stored in the HTML elements with the ID of score and over writes it with 0 before writing the new value back to the DOM. If `resetScore` was triggered by a red light hit, an alert is shown on screen to let the player know they hit a red light. 
+
+### Rules Button
+
+The rules for the game are designed as a modal popup. I used code from W3 schools to implement this feature, making changes to the styling to match the overall theme of the game. The original tutorial for this feature can be found [here](https://www.w3schools.com/howto/howto_css_modals.asp).
 
 ## Technologies Used
 
@@ -105,4 +109,5 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 ## Credits
 
 * The `setTimeout()` code for timing of switching lights on and off was used from [Stack Overflow](https://stackoverflow.com/questions/17883692/how-to-set-time-delay-in-javascript).
+* The modal box popup for the rules is taken from [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp).
 
