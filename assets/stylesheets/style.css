@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
 body {
+    font-family: 'Sniglet', cursive;
     height: 100%;
     margin: 5px;
     background-image: url("../images/mobile_background.webp");
