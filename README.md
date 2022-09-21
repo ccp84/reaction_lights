@@ -89,6 +89,7 @@ The game is not active upon loading the webpage, the user triggers this by selec
 * Chrome DevTools
 * Canva
 * Paint.NET
+* Google Fonts
 ## Testing
 
 ## Deployment
@@ -114,4 +115,5 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 
 * The `setTimeout()` code for timing of switching lights on and off was used from [Stack Overflow](https://stackoverflow.com/questions/17883692/how-to-set-time-delay-in-javascript).
 * The modal box popup for the rules is taken from [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp).
+* Sniglet font used from [Google Fonts](https://fonts.google.com/specimen/Sniglet).
 
