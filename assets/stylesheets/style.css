@@ -12,6 +12,7 @@ body {
 
 header {
     text-align: center;
+    background-color: lightgreen;
 }
 
 /*Main game canvas*/
@@ -52,11 +53,17 @@ footer {
     display: inline-block;
     background-color: lightgreen;
     border: 3px solid green;
+    padding: 20px;
 }
 
 .game_buttons {
     margin: 10px;
     text-align: center;
+}
+
+button {
+    padding: 10px;
+    margin: 10px 20px;
 }
 
 /* EXTERNAL CODE USED FROM https://www.w3schools.com/howto/howto_css_modals.asp */
