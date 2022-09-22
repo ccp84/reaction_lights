@@ -92,6 +92,8 @@ The game is not active upon loading the webpage, the user triggers this by selec
 * Google Fonts
 ## Testing
 
+[Link to testing carried out](TESTING.md)
+
 ## Deployment
 
 The site was deployed to GitHub pages. The steps to deploy are as follows: 
