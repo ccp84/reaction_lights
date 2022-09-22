@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    font-family: 'Sniglet', cursive;
+    font-family: 'Sniglet', cursive,'comic sans','arial';
     height: 100%;
     margin: 5px;
     background-image: url("../images/mobile_background.webp");
@@ -68,7 +68,6 @@ button {
 }
 /*Footer containing image link*/
 footer {
-    background-color: lightgreen;
     text-align: center;
 }
 
