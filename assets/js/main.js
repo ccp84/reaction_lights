@@ -1,11 +1,14 @@
 // Get a list of lights
 const lights = document.querySelectorAll('.light');
+let endGame = false; // set the end of game variable to false on load;
 
 // Wait for DOM content to be loaded
 document.addEventListener('DOMContentLoaded', function () {
   // run the game once loaded
   let startButton = document.getElementById('start');
   startButton.addEventListener('click', function() {
+    endGame = false; // reset the end game variable
+    resetScore(); // reset the score 
     lightOn();
   });
 
@@ -17,10 +20,10 @@ document.addEventListener('DOMContentLoaded', function () {
         addScore(light);
         light.classList.remove('light_on');
       } else {
-        // When a red light is hit, end the game and reset the score count
+        // When a red light is hit, end the game
         let finalScore = document.getElementById('score').innerHTML;
         window.alert(`Oh no you hit a red light. Final score ${finalScore}`);
-        resetScore();
+        endGame = true;
       }
     });
   }
@@ -36,7 +39,7 @@ function addScore() {
 }
 
 /*
-* Function to set score to zero again when a red light is clicked
+* Function to set score to zero again
 */
 function resetScore() {
   let currentScore = document.getElementById('score').innerHTML;
@@ -63,17 +66,20 @@ function lightTimer() {
  * after the specified time from lightTimer function
  */
 function lightOn() {
-  // Get the number of elements with class light and generate a random number from this
-  let lightNumber = Math.floor(Math.random() * lights.length);
-  let activeLight = lights[lightNumber];
-  activeLight.classList.add('light_on');
+  // check if the endGame variable has been triggered by a red light
+  if(!endGame){
+    // Get the number of elements with class light and generate a random number from this
+    let lightNumber = Math.floor(Math.random() * lights.length);
+    let activeLight = lights[lightNumber];
+    activeLight.classList.add('light_on');
 
-  // The timeout feature was researched on StackOverflow - see link in credits
-  // Turn light off again
-  setTimeout(function () {
-    timeOut = lightTimer();
-    lightOff(activeLight);
-  }, timeOut);
+    // The timeout feature was researched on StackOverflow - see link in credits
+    // Turn light off again
+    setTimeout(function () {
+      timeOut = lightTimer();
+      lightOff(activeLight);
+    }, timeOut);
+  }
 }
 
 /*

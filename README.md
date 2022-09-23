@@ -74,7 +74,7 @@ The function to retun the light to red simply calls `activeLight.classList.remov
 
 ### Rules Button
 
-The rules for the game are designed as a modal popup. I used code from W3 schools to implement this feature, making changes to the styling to match the overall theme of the game. The original tutorial for this feature can be found [here](https://www.w3schools.com/howto/howto_css_modals.asp).
+The rules for the game are designed as a modal popup. I used code from W3 schools to implement this feature, making changes to the styling to match the overall theme of the game. The original tutorial for this feature can be found [here](https://www.w3schools.com/howto/howto_css_modals.asp). This code used older `var` and `onClick` code, and so I have updated these instances with `let` and `addEventListener` code to ensure the coding is up to date and future proof. 
 
 ### Start Button
 
