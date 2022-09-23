@@ -6,26 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A JavaScript game to test your reflexes">
     <link rel="stylesheet" href="assets/stylesheets/style.css">
-    <link rel="icon" sizes="50x50" href="icon.webp" type="image/x-icon">
+    <link rel="icon" sizes="50x50" href="assets/images/icon.webp" type="image/x-icon">
     <title>Reaction Lights</title>
 </head>
 <body>
     <header>
         <h1>Test Your Reaction</h1>
         <h2>How High Can You Score?</h2>
-    </header> 
-    <!--Main game canvas - 4 lights on mobile, 8 on tablet, 9 on desktop-->   
-    <main id="game">
-        <div class="light light_mobile">     </div>
-        <div class="light light_mobile">     </div>
-        <div class="light light_mobile">     </div>
-        <div class="light light_mobile">     </div>
-        <div class="light light_tablet">     </div>
-        <div class="light light_tablet">     </div>
-        <div class="light light_tablet">     </div>
-        <div class="light light_tablet">     </div>
-        <div class="light light_desktop">     </div>
-    </main>
+    </header>  
+    <main>
+        <!--Main game canvas - 4 lights on mobile, 8 on tablet, 9 on desktop-->  
+        <section id="game">
+            <div class="light light_mobile">     </div>
+            <div class="light light_mobile">     </div>
+            <div class="light light_mobile">     </div>
+            <div class="light light_mobile">     </div>
+            <div class="light light_tablet">     </div>
+            <div class="light light_tablet">     </div>
+            <div class="light light_tablet">     </div>
+            <div class="light light_tablet">     </div>
+            <div class="light light_desktop">    </div>
+        </section>
     <!--Display score-->
     <section class="score_box">
         <div id="score_container">Score: <span id="score">0</span></div>
@@ -51,6 +52,7 @@
             </div>
         </div>
     </section>
+    </main>
     <footer>
         <a href="https://cosmicdinosaur.tech/" target="_blank" rel="nofollow"><img src="assets/images/cosmicdinosaur.webp" alt="Cosmic Dinosaur Tech"></a>
     </footer>
