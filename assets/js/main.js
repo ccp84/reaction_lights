@@ -123,17 +123,19 @@ window.addEventListener('click', function (event) {
  * Alert function for end of game
  */
 function alertModal() {
-  //let finalScore = document.getElementById('score').innerHTML;
+  //Set modal message to current score
+  let finalScore = document.getElementById('score').innerHTML;
+  let alertMessage = `Oh no you hit a red light. Final score ${finalScore}`;
+  document.getElementById('alert_content').innerHTML = alertMessage;
+
   // Get the modal
   let lightModal = document.getElementById("light_modal");
 
   // Get the <span> element that closes the modal
   let lightSpan = document.getElementById("close_light");
 
-  // When the user clicks on the button, open the modal THIS PARt hERE DISPLAY MODAL
- // rules.addEventListener('click', function () {
-    lightModal.style.display = "block"; //show the modal when the function is called? 
- // });
+  // Show the modal when the function is called
+    lightModal.style.display = "block";
 
   // When the user clicks on <span> (x), close the modal
   lightSpan.addEventListener('click', function () {
