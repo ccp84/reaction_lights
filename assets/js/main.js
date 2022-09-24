@@ -6,7 +6,7 @@ let endGame = false; // set the end of game variable to false on load;
 document.addEventListener('DOMContentLoaded', function () {
   // run the game once loaded
   let startButton = document.getElementById('start');
-  startButton.addEventListener('click', function() {
+  startButton.addEventListener('click', function () {
     endGame = false; // reset the end game variable
     resetScore(); // reset the score 
     lightOn();
@@ -21,9 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
         light.classList.remove('light_on');
       } else {
         // When a red light is hit, end the game
-        let finalScore = document.getElementById('score').innerHTML;
-        window.alert(`Oh no you hit a red light. Final score ${finalScore}`);
         endGame = true;
+        // Show on screen message
+        alertModal();
       }
     });
   }
@@ -39,8 +39,8 @@ function addScore() {
 }
 
 /*
-* Function to set score to zero again
-*/
+ * Function to set score to zero again
+ */
 function resetScore() {
   let currentScore = document.getElementById('score').innerHTML;
   currentScore = 0;
@@ -67,7 +67,7 @@ function lightTimer() {
  */
 function lightOn() {
   // check if the endGame variable has been triggered by a red light
-  if(!endGame){
+  if (!endGame) {
     // Get the number of elements with class light and generate a random number from this
     let lightNumber = Math.floor(Math.random() * lights.length);
     let activeLight = lights[lightNumber];
@@ -92,7 +92,7 @@ function lightOff(activeLight) {
 
 /*
  * EXTERNAL CODE USED FROM https://www.w3schools.com/howto/howto_css_modals.asp
-*/
+ */
 // Get the modal
 let modal = document.getElementById("rules_modal");
 
@@ -103,18 +103,47 @@ let rules = document.getElementById("rules");
 let span = document.getElementById("close_rules");
 
 // When the user clicks on the button, open the modal
-rules.addEventListener('click',function() {
+rules.addEventListener('click', function () {
   modal.style.display = "block";
 });
 
 // When the user clicks on <span> (x), close the modal
-span.addEventListener('click', function() {
+span.addEventListener('click', function () {
   modal.style.display = "none";
 });
 
 // When the user clicks anywhere outside of the modal, close it
-window.addEventListener('click',function(event) {
+window.addEventListener('click', function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 });
+
+/*
+ * Alert function for end of game
+ */
+function alertModal() {
+  //let finalScore = document.getElementById('score').innerHTML;
+  // Get the modal
+  let lightModal = document.getElementById("light_modal");
+
+  // Get the <span> element that closes the modal
+  let lightSpan = document.getElementById("close_light");
+
+  // When the user clicks on the button, open the modal THIS PARt hERE DISPLAY MODAL
+ // rules.addEventListener('click', function () {
+    lightModal.style.display = "block"; //show the modal when the function is called? 
+ // });
+
+  // When the user clicks on <span> (x), close the modal
+  lightSpan.addEventListener('click', function () {
+    lightModal.style.display = "none";
+  });
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.addEventListener('click', function (event) {
+    if (event.target == lightModal) {
+      lightModal.style.display = "none";
+    }
+  });
+}
