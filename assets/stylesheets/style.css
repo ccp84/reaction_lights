@@ -16,7 +16,11 @@ body {
 
 header {
     text-align: center;
-    background-color: lightgreen;
+}
+
+h1, h2 {
+    color: lightgreen;
+    text-shadow: 5px 5px black;
 }
 
 /* Main game canvas */
