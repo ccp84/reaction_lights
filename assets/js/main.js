@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
         endGame = true;
         // Show on screen message
         alertModal();
+        // Check if there is a new high score
+        highestScore();
       }
     });
   }
@@ -45,6 +47,18 @@ function resetScore() {
   let currentScore = document.getElementById('score').innerHTML;
   currentScore = 0;
   document.getElementById('score').innerHTML = currentScore;
+}
+
+/*
+ * Function to check and update highest score
+ */
+function highestScore() {
+  let highScore = document.getElementById('high_score').innerHTML;
+  let checkScore = document.getElementById('score').innerHTML;
+  if (checkScore > highScore) {
+    highScore = checkScore;
+    document.getElementById('high_score').innerHTML = highScore;
+  }
 }
 
 /*
