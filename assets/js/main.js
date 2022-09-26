@@ -49,6 +49,7 @@ function resetScore() {
 
 /*
  * Timer function used to randomise when the lights change from red to green between 0.5 and 2 seconds
+ * on hard mode, 1 second and 3 seconds on easy mode.
  */
 let timer = 0;
 let timeOut = 0;
