@@ -119,4 +119,4 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 * The modal box popup for the rules is taken from [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp).
 * Sniglet font used from [Google Fonts](https://fonts.google.com/specimen/Sniglet).
 * Code for getting the currently checked radio button used from [Stack Overflow](https://stackoverflow.com/questions/9618504/how-to-get-the-selected-radio-button-s-value).
-
+* Tutorial for using root variables in CSS followed from [W3 Schools](https://www.w3schools.com/css/css3_variables.asp).

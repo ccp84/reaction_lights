@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
 
+/* Tutorial for root variables followed from W3 Schools https://www.w3schools.com/css/css3_variables.asp */
+:root {
+    --on-colour: rgb(144,238,144);
+    --on-border: rgb(0,128,0);
+    --off-colour: rgb(255,0,0);
+    --off-border: rgb(0,0,0);
+}
+
 html, body { 
     height: 100%;
 }
@@ -19,7 +27,7 @@ header {
 }
 
 h1, h2 {
-    color: lightgreen;
+    color: var(--on-colour);
     text-shadow: 5px 5px black;
 }
 
@@ -38,15 +46,15 @@ h1, h2 {
     width: 5rem;
     margin: 20px;
     padding: 10px;
-    background-color: red;
-    border: 3px solid black;
+    background-color: var(--off-colour);
+    border: 3px solid var(--off-border);
     border-radius: 50%;
 }
 
 /* Class for JS to use to turn light button divs to 'on' */
 .light_on {
-    background-color: lightgreen;
-    border: 3px solid green;
+    background-color: var(--on-colour);
+    border: 3px solid var(--on-border);
 }
 
 /* Styling for display of score and buttons */
@@ -56,8 +64,8 @@ h1, h2 {
 
 .score_container {
     display: inline-block;
-    background-color: lightgreen;
-    border: 3px solid green;
+    background-color: var(--on-colour);
+    border: 3px solid var(--on-border);
     padding: 20px;
     margin: 5px;
 }
@@ -76,7 +84,7 @@ button {
 
 #game_select {
     display: inline-block;
-    background-color: lightgreen;
+    background-color: var(--on-colour);
 }
 
 /* Footer containing image link */
@@ -114,10 +122,10 @@ body > footer {
   
   /* Modal Content/Box */
   .modal-content {
-    background-color: lightgreen;
+    background-color: var(--on-colour);
     margin: 15% auto; /* 15% from the top and centered */
     padding: 10px;
-    border: 3px solid green;
+    border: 3px solid var(--on-border);
     width: 80%; /* Could be more or less, depending on screen size */
   }
 
