@@ -58,20 +58,22 @@ function lightTimer() {
   // Syntax for getting checked radio button used from stack overflow 
   // https://stackoverflow.com/questions/9618504/how-to-get-the-selected-radio-button-s-value
   let gameMode = document.querySelector('input[name="game_mode"]:checked').value;
+  // If game mode indicator is set to easy, return between 1000ms and 3000ms to the timeout function
   if (gameMode == "easy") {
     timer = Math.random() * 3000;
     if (timer <= 1000) {
      timer = 1000;
     }
-    console.log(timer);
     return timer;
-  } else {
+  // If game mode indicator is set to hard, return between 500ms and 2000ms to the timeout function
+  } else if (gameMode == "hard") {
     timer = Math.random() * 2000;
     if (timer <= 500) {
      timer = 500;
     }
-    console.log(timer);
     return timer;
+  } else {
+    window.alert("Error, Game mode not set");
   }
 }
 
