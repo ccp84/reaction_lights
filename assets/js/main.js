@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
       } else {
         // When a red light is hit, end the game
         endGame = true;
-        // Show on screen message
-        alertModal();
         // Check if there is a new high score
         highestScore();
+        // Show on screen message
+        alertModal();
       }
     });
   }
