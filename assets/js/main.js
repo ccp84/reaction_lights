@@ -53,8 +53,8 @@ function resetScore() {
  * Function to check and update highest score
  */
 function highestScore() {
-  let highScore = document.getElementById('high_score').innerHTML;
-  let checkScore = document.getElementById('score').innerHTML;
+  let highScore = parseInt(document.getElementById('high_score').innerHTML);
+  let checkScore = parseInt(document.getElementById('score').innerHTML);
   if (checkScore > highScore) {
     highScore = checkScore;
     document.getElementById('high_score').innerHTML = highScore;
