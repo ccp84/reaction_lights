@@ -55,11 +55,24 @@ let timer = 0;
 let timeOut = 0;
 
 function lightTimer() {
-  timer = Math.random() * 2000;
-  if (timer <= 500) {
-    timer = 500;
+  // Syntax for getting checked radio button used from stack overflow 
+  // https://stackoverflow.com/questions/9618504/how-to-get-the-selected-radio-button-s-value
+  let gameMode = document.querySelector('input[name="game_mode"]:checked').value;
+  if (gameMode == "easy") {
+    timer = Math.random() * 3000;
+    if (timer <= 1000) {
+     timer = 1000;
+    }
+    console.log(timer);
+    return timer;
+  } else {
+    timer = Math.random() * 2000;
+    if (timer <= 500) {
+     timer = 500;
+    }
+    console.log(timer);
+    return timer;
   }
-  return timer;
 }
 
 /*
