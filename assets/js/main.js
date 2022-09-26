@@ -121,6 +121,27 @@ function lightOff(activeLight) {
 }
 
 /*
+ * Add event listener to colour change buttons and handle change of CSS root variable
+ */
+const redGreen = document.getElementById('redgreen');
+redGreen.addEventListener('click', () => {
+  let rootVars = document.querySelector(':root');
+  rootVars.style.setProperty('--on-colour', 'rgb(144,238,144)');
+  rootVars.style.setProperty('--on-border', 'rgb(0,128,0)');
+  rootVars.style.setProperty('--off-colour', 'rgb(255,0,0)');
+  rootVars.style.setProperty('--off-border', 'rgb(0,0,0)');
+});
+
+const yellowBlue = document.getElementById('yellowblue');
+yellowBlue.addEventListener('click', () => {
+  let rootVars = document.querySelector(':root');
+  rootVars.style.setProperty('--on-colour', 'rgb(255,255,0)');
+  rootVars.style.setProperty('--on-border', 'rgb(204,204,0)');
+  rootVars.style.setProperty('--off-colour', 'rgb(0,0,255)');
+  rootVars.style.setProperty('--off-border', 'rgb(0,0,0)');
+});
+
+/*
  * EXTERNAL CODE USED FROM https://www.w3schools.com/howto/howto_css_modals.asp
  */
 // Get the modal
