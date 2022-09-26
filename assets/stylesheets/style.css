@@ -82,9 +82,9 @@ button {
 
 /* Radio buttons */
 
-#game_select {
-    display: inline-block;
+#game_select, #colour_select {
     background-color: var(--on-colour);
+    margin: 5px;
 }
 
 /* Footer containing image link */
