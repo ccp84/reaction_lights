@@ -50,7 +50,7 @@ header {
     text-align: center;
 }
 
-#score_container {
+.score_container {
     display: inline-block;
     background-color: lightgreen;
     border: 3px solid green;
