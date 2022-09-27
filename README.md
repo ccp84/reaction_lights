@@ -3,6 +3,8 @@
 ## Concept
 Reaction Lights is a JavaScript game to test reaction speed. The user must react to on screen colour changes, however, any incorrect clicks will end your winning streak. How high can you get your score count before you hit a red light?
 
+![Overview of project](documentation/overview.png)
+
 ## User Stories
 Visitors to the site must be able to :
 * Load the game on their device
@@ -11,7 +13,7 @@ Visitors to the site must be able to :
 * Start a new game
 
 ## Features of the site
-* Rules to display on a separate page, easily accessed from the main page
+* Rules are easily accessed from the main page
 * Score to be displayed clearly at all times
 * Game mode to change depending on the device the game is being played on
 

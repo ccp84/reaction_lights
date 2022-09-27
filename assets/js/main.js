@@ -122,6 +122,8 @@ function lightOff(activeLight) {
 
 /*
  * Add event listener to colour change buttons and handle change of CSS root variable
+ * Tutorial for changing root variables followed from W3 Schools
+ * https://www.w3schools.com/css/css3_variables_javascript.asp
  */
 const redGreen = document.getElementById('redgreen');
 redGreen.addEventListener('click', () => {
