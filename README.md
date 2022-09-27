@@ -39,11 +39,17 @@ The desktop game will be the most advanced version with a 3 x 3 button grid, max
 
 ### Game Canvas
 
-The mobile game has a slimmer background image, with a vertical single column CSS grid system displaying only stacked 2 buttons. For this a media query has been used to hide the remainder of the buttons on screens 600px and smaller. The mobile game is the standard display and is the base game developed with the larger verions developed from this initial 2 button version. 
+The mobile game has a slimmer background image, with a 2 column CSS grid layout to allow for the screen width limitations and a total of 4 lights on screen. For this a media query has been used to hide the remainder of the lights on screens 600px and smaller. The mobile game is the standard display and is the base game developed with the larger verions developed from this initial 4 button version. 
 
-The tablet game is designed on a larger 2 column CSS grid, displaying 4 buttons. This is achieved by changing the grid for a media query when the screen width is a minimum of 600px. 
+![Mobile view](documentation/mobile_screen.png)
+
+The tablet game is designed on a larger 2 column CSS grid layout, this time utilising the larger viewing height for a total of 8 lights. This is achieved by changing the grid for a media query when the screen width is a minimum of 600px. 
+
+![Tablet view](documentation/tablet_screen.png)
 
 The full desktop game features a 3 column CSS grid and 9 buttons. This view appears for screen sizes over 992px. 
+
+![Desktop view](documentation/desktop_screen.png)
 
 ### Timer Function
 
