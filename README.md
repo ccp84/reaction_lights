@@ -51,6 +51,12 @@ The full desktop game features a 3 column CSS grid and 9 buttons. This view appe
 
 ![Desktop view](documentation/desktop_screen.png)
 
+
+### Starting And Ending The Game
+
+Gameplay is triggered from the startgame button. Event listeners are attached to the start button and all of the light instances. 
+The start button triggers the `resetScore()` function to be run first to ensure the score is reset to zero, it also sets the `endGame` flag to false to tell the `lightOn()` function that it should run when called. The `lightOn()` function is the final thing that is called when the game is started, this starts game play.
+
 ### Timer Function
 
 The `lightTimer` function in the game is used to randomise how long is it between each state change for the lights. This is achieved by using `Math.random()`, and multiplying this by 2000 to get a time up to 2 seconds. There was no need to turn this into a whole number as it does not matter for the game play. 
