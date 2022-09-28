@@ -56,6 +56,7 @@ The full desktop game features a 3 column CSS grid and 9 buttons. This view appe
 
 Gameplay is triggered from the startgame button. Event listeners are attached to the start button and all of the light instances. 
 The start button triggers the `resetScore()` function to be run first to ensure the score is reset to zero, it also sets the `endGame` flag to false to tell the `lightOn()` function that it should run when called. The `lightOn()` function is the final thing that is called when the game is started, this starts game play.
+Event listeners added to the light instances on loading look for clicks on green/yellow lights and increment the score in this scenario. If the case of a red/blue light being clicked occurs, the `endGame` flag is set to true to stop game play, the `highestScore()` function is called to check and display the highest score for this session of game play on screen next to the current score for the round, and then the `alertModal()` function is called to display a message letting the user know they hit a light in the off state and what their finishing score was. 
 
 ### Timer Function
 
@@ -84,7 +85,7 @@ The function to retun the light to red simply calls `activeLight.classList.remov
 
 ### Reset score function
 
-`resetScore` is triggered either when the player starts a new game, or when a player hits a red light during game play to set the score back to 0 again. The function fetches the current number stored in the HTML elements with the ID of score and over writes it with 0 before writing the new value back to the DOM. If `resetScore` was triggered by a red light hit, an alert is shown on screen to let the player know they hit a red light. 
+`resetScore` is triggered either when the player starts a new game. The function fetches the current number stored in the HTML elements with the ID of score and over writes it with 0 before writing the new value back to the DOM.
 
 ### Rules Button
 
