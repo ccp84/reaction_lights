@@ -98,6 +98,11 @@ footer img {
     height: 50px;
 }
 
+footer a, footer a:visited {
+    color: black;
+    background-color: var(--on-border);
+}
+
 /* Stick footer to bottom of screen if less than 100% of viewing window height */
 body > footer {
     position: sticky;
