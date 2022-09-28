@@ -114,7 +114,10 @@ The game is not active upon loading the webpage, the user triggers this by selec
 
 The highest score function fetches the values stored in the HTML elements with ID of score (the current score) and high_score. Compares the two. And if the current score is higher than the stored highest score, over writes the stored highest score. `parseInt()` was needed to convert the HTML elements into numbers before running the if statement as both values are returned as strings when fetching from the DOM initially. When running the if statement on the values as strings, 10 is returned as a lower value than 9. 
 
+### Root Variables for Colour Changes
 
+Due to the main colours of the game not being suitable for red/green colour blindness, I included the option for users to switch the theme to yellow/blue which are more suitable. This is achieved by setting the colours as root variables rather than the rgb values in the css file. 
+An event listener on the radio buttons triggers the change when a user clicks to switch between colour schemes. 
 
 ## Technologies Used
 
