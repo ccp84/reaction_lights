@@ -119,6 +119,10 @@ The highest score function fetches the values stored in the HTML elements with I
 Due to the main colours of the game not being suitable for red/green colour blindness, I included the option for users to switch the theme to yellow/blue which are more suitable. This is achieved by setting the colours as root variables rather than the rgb values in the css file. 
 An event listener on the radio buttons triggers the change when a user clicks to switch between colour schemes. 
 
+### Game end modal function
+
+When a red or blue light is hit, a modal box appears informing the player that they hit a red/blue light and what their final score was for that round. I used the base code from the W3 Schools tutorial to build the modal popup, and modified it to be called by a function rather than activated by a button click. The styling elements have been re used to avoid duplicating code in the stylesheet, and to ensure a continuation of the game theme. 
+
 ## Technologies Used
 
 * HTML
