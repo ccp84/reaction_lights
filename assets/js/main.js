@@ -125,8 +125,10 @@ function lightOff(activeLight) {
  * Tutorial for changing root variables followed from W3 Schools
  * https://www.w3schools.com/css/css3_variables_javascript.asp
  */
+let endColour = "red"; // Used in the game end alert modal
 const redGreen = document.getElementById('redgreen');
 redGreen.addEventListener('click', () => {
+  endColour = "red";
   let rootVars = document.querySelector(':root');
   rootVars.style.setProperty('--on-colour', 'rgb(144,238,144)');
   rootVars.style.setProperty('--on-border', 'rgb(0,128,0)');
@@ -145,6 +147,7 @@ redGreen.addEventListener('click', () => {
 
 const yellowBlue = document.getElementById('yellowblue');
 yellowBlue.addEventListener('click', () => {
+  endColour = "blue";
   let rootVars = document.querySelector(':root');
   rootVars.style.setProperty('--on-colour', 'rgb(255,255,0)');
   rootVars.style.setProperty('--on-border', 'rgb(204,204,0)');
@@ -194,9 +197,9 @@ window.addEventListener('click', function (event) {
  * Alert function for end of game
  */
 function alertModal() {
-  //Set modal message to current score
+  //Set modal message to current score and game colour
   let finalScore = document.getElementById('score').innerHTML;
-  let alertMessage = `Oh no you hit a red light. Final score ${finalScore}`;
+  let alertMessage = `Oh no you hit a ${endColour} light. Final score ${finalScore}`;
   document.getElementById('alert_content').innerHTML = alertMessage;
 
   // Get the modal
