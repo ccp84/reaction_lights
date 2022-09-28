@@ -76,14 +76,14 @@ function lightTimer() {
   if (gameMode == "easy") {
     timer = Math.random() * 3000;
     if (timer <= 1000) {
-     timer = 1000;
+      timer = 1000;
     }
     return timer;
-  // If game mode indicator is set to hard, return between 500ms and 2000ms to the timeout function
+    // If game mode indicator is set to hard, return between 500ms and 2000ms to the timeout function
   } else if (gameMode == "hard") {
     timer = Math.random() * 2000;
     if (timer <= 500) {
-     timer = 500;
+      timer = 500;
     }
     return timer;
   } else {
@@ -132,6 +132,15 @@ redGreen.addEventListener('click', () => {
   rootVars.style.setProperty('--on-border', 'rgb(0,128,0)');
   rootVars.style.setProperty('--off-colour', 'rgb(255,0,0)');
   rootVars.style.setProperty('--off-border', 'rgb(0,0,0)');
+  // Change text of rules modal for colour change
+  let redGreenRules = `<ul>
+  <li>Tap on the lights when they go green</li>
+  <li>Score one point per green light</li>
+  <li>Avoid red lights</li>
+  <li>Hit a red light and your score resets to zero</li>
+  <li>How high can you score?</li>
+  </ul>`;
+  document.getElementById('inner_rules').innerHTML = redGreenRules;
 });
 
 const yellowBlue = document.getElementById('yellowblue');
@@ -141,6 +150,15 @@ yellowBlue.addEventListener('click', () => {
   rootVars.style.setProperty('--on-border', 'rgb(204,204,0)');
   rootVars.style.setProperty('--off-colour', 'rgb(0,0,255)');
   rootVars.style.setProperty('--off-border', 'rgb(0,0,0)');
+  // Change text of rules modal for colour change
+  let yellowBlueRules = `<ul>
+  <li>Tap on the lights when they go yellow</li>
+  <li>Score one point per yellow light</li>
+  <li>Avoid blue lights</li>
+  <li>Hit a blue light and your score resets to zero</li>
+  <li>How high can you score?</li>
+  </ul>`;
+  document.getElementById('inner_rules').innerHTML = yellowBlueRules;
 });
 
 /*
@@ -188,7 +206,7 @@ function alertModal() {
   let lightSpan = document.getElementById("close_light");
 
   // Show the modal when the function is called
-    lightModal.style.display = "block";
+  lightModal.style.display = "block";
 
   // When the user clicks on <span> (x), close the modal
   lightSpan.addEventListener('click', function () {
