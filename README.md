@@ -95,6 +95,12 @@ The rules for the game are designed as a modal popup. I used code from W3 school
 
 The game is not active upon loading the webpage, the user triggers this by selecting the start game button at the bottom of the page. There is an event listener attached to the start button that calls the `lightOn()` function to start the game loop running. This allows the player some element of control over the game and gives a similar feel to not having music and sound instantly playing at you when you load a webpage, the lights of the game do not instantly start flashing upon loading the page for the first time for a better user experience.
 
+### Highest Score Function
+
+The highest score function fetches the values stored in the HTML elements with ID of score (the current score) and high_score. Compares the two. And if the current score is higher than the stored highest score, over writes the stored highest score. `parseInt()` was needed to convert the HTML elements into numbers before running the if statement as both values are returned as strings when fetching from the DOM initially. When running the if statement on the values as strings, 10 is returned as a lower value than 9. 
+
+
+
 ## Technologies Used
 
 * HTML
