@@ -60,14 +60,29 @@ Event listeners added to the light instances on loading look for clicks on green
 
 ### Timer Function
 
-The `lightTimer` function in the game is used to randomise how long is it between each state change for the lights. This is achieved by using `Math.random()`, and multiplying this by 2000 to get a time up to 2 seconds. There was no need to turn this into a whole number as it does not matter for the game play. 
-In order to not have a 0 seconds delay between on and off states. Code is used to check if the random number produced is less than 500 which is 500ms or half a second :
+The `lightTimer` function in the game is used to randomise how long is it between each state change for the lights. This is achieved by using `Math.random()`, and multiplying this by 3000 for easy mode or 2000 for hard mode to get a time up to 3 or 2 seconds. There was no need to turn this into a whole number as it does not matter for the game play. 
+In order to not have a 0 seconds delay between on and off states. Code is used to check if the random number produced is less than 1000 for easy mode or 500 for hard mode which is 500ms or half a second / 1000ms or 1 second. In either case, a value less than the minimum for the game mode will return the minimum output of either 1000 or 500.
+First of all the game mode selector must be checked `let gameMode = document.querySelector('input[name="game_mode"]:checked').value` the output being either easy or hard and this is used to determine which timer values are used:
 ```js
-if (timer <= 500) {
-    timer = 500;
+  if (gameMode == "easy") {
+    timer = Math.random() * 3000;
+    if (timer <= 1000) {
+     timer = 1000;
+    }
+    return timer;
+  } else if (gameMode == "hard") {
+    timer = Math.random() * 2000;
+    if (timer <= 500) {
+     timer = 500;
+    }
+    return timer;
+```
+A catch is included at the end of the if statement incase of no game mode being set:
+```js
+  } else {
+    window.alert("Error, Game mode not set");
   }
 ```
-If this is the case then the timer is set to 0.5 seconds.
 
 ### Light On Function (Main game play)
 
