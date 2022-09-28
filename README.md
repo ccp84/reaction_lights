@@ -125,14 +125,18 @@ When a red or blue light is hit, a modal box appears informing the player that t
 
 ## Technologies Used
 
-* HTML
-* CSS
-* JavaScript
-* GitHub
-* Chrome DevTools
-* Canva
-* Paint.NET
-* Google Fonts
+* HTML - Main language used for base site design.
+* CSS - Main language used for over all site styling.
+* JavaScript - Main language used for game interactive functionality.
+* [GitHub](https://github.com/) - Used for version control during project development and cloud hosting of project code.
+* Git - Version control technology behind Github.
+* CSS Grid - Functionality used to allow responsive layout design. 
+* [Github Projects](https://github.com/users/ccp84/projects/1/views/1) - Used to track completion of project components.
+* [Github Issues](https://github.com/ccp84/reaction_lights/issues?q=is%3Aissue+is%3Aclosed) - Used to track code errors and progress on bug fixes.
+* Chrome DevTools - Used for under construction checking of code output and console logs. 
+* [Canva](https://www.canva.com/) - Background image design.
+* Paint.NET - Image manipulation and resizing.
+* [Google Fonts](https://fonts.google.com/).
 ## Testing
 
 [Link to testing carried out](TESTING.md)
