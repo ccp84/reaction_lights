@@ -95,7 +95,7 @@ footer {
 
 footer a, footer a:visited {
     color: black;
-    background-color: var(--on-border);
+    background-color: var(--on-colour);
 }
 
 /* Stick footer to bottom of screen if less than 100% of viewing window height */

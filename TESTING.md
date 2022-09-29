@@ -45,6 +45,16 @@ Media queries work for the game to allow for the best display on differing viewp
 
 ## Accessibility (Lighthouse Score)
 
+Performance score of 94 with nothing that can be improved upon for this area
+
+![Lighthouse performance](documentation/testing/lighthouse1.png)
+
+Accessibility score of 96 due to footer text contrast. This can be improved easily.
+
+![Lighthouse accessibility](documentation/testing/lighthouse2.png)
+
+
+
 ## Browser Compatibility
 
 * [Return to Readme](README.md)
