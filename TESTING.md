@@ -71,4 +71,18 @@ SEO score is now 100 with sizing and spacing changes made.
 
 ## Browser Compatibility
 
+The game has been tested successfully in:
+
+### Chrome
+![Chrome](documentation/testing/chrome.png)
+
+### Edge
+![Edge](documentation/testing/edge.png)
+
+### Firefox Developer
+![Firefox](documentation/testing/firefox.png)
+
+### Safari
+![Safari](documentation/testing/safari.png)
+
 * [Return to Readme](README.md)
