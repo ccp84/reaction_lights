@@ -47,12 +47,23 @@ Media queries work for the game to allow for the best display on differing viewp
 
 Performance score of 94 with nothing that can be improved upon for this area
 
-![Lighthouse performance](documentation/testing/lighthouse1.png)
+![Lighthouse performance score](documentation/testing/lighthouse1.png)
 
 Accessibility score of 96 due to footer text contrast. This can be improved easily.
 
-![Lighthouse accessibility](documentation/testing/lighthouse2.png)
+![Lighthouse accessibility score](documentation/testing/lighthouse2.png)
 
+With the styling changed, the accessibility score is now 100.
+
+![Lighthouse improved accessibility score](documentation/testing/lighthouse3.png)
+
+Best practices score is 100
+
+![Lighthouse best practice score](documentation/testing/lighthouse4.png)
+
+SEO score is 96. This can be improved upon by resizing the radio buttons for colour changes and giving more space around the tap area.
+
+![Lighthouse SEO score](documentation/testing/lighthouse5.png)
 
 
 ## Browser Compatibility
