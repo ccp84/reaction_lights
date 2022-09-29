@@ -65,6 +65,9 @@ SEO score is 96. This can be improved upon by resizing the radio buttons for col
 
 ![Lighthouse SEO score](documentation/testing/lighthouse5.png)
 
+SEO score is now 100 with sizing and spacing changes made.
+
+![Improved lighthouse SEO score](documentation/testing/lighthouse6.png)
 
 ## Browser Compatibility
 
