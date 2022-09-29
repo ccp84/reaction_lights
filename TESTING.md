@@ -23,11 +23,25 @@ During project development I have used GitHub Issues to track and monitor bug fi
 
 ### W3C Validator
 
+An error was recorded for using a `<ul>` tag within a `<span>` 
+
+![Span error](documentation/testing/html_error_1.png)
+
+This was cleared by changing the `<span>` to a `<div>` element.
+
 ### Jigsaw Validator
+
+CSS validation was clear on the first time of running. 
+
+![CSS Validation screenshot](documentation/testing/css_validation.png)
 
 ### Jshint Validator
 
 ## Responsiveness
+
+Media queries work for the game to allow for the best display on differing viewport widths. As standard, a 2 x 2 CSS grid is diplayed for devices under 600px in width and has been tested as working down to screens 320px in width. A media query changes the grid display to a 4 x 4 display for screens above 600px in width this is tested as working up to 991px width. The final breakpoint is tested as working for screen widths over 992px and produces a grid 3 x 3 in size.
+
+![Responsive screenshot](documentation/testing/responsive_screenshot.png)
 
 ## Accessibility (Lighthouse Score)
 
