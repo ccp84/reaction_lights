@@ -1,3 +1,4 @@
+/* jshint esversion: 11 */
 // Get a list of lights
 const lights = document.querySelectorAll('.light');
 let endGame = false; // set the end of game variable to false on load;
