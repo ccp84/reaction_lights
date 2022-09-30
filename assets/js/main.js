@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	// Add event listeners to each light
-	for (let light of lights) {
-		light.addEventListener('click', function () {
+	lights.forEach((light) => {
+		light.addEventListener('click', () => {
 			// Call the function to check if score should be incremented on click
 			if (light.classList.contains("light_on")) {
 				addScore(light);
@@ -29,7 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
 				alertModal();
 			}
 		});
-	}
+
+	});
 });
 
 /* 
@@ -99,6 +100,9 @@ function lightTimer() {
 function lightOn() {
 	// check if the endGame variable has been triggered by a red light
 	if (!endGame) {
+		lights.forEach(light => {
+			light.classList.remove("disable");
+		});
 		// Get the number of elements with class light and generate a random number from this
 		let lightNumber = Math.floor(Math.random() * lights.length);
 		let activeLight = lights[lightNumber];
@@ -110,6 +114,10 @@ function lightOn() {
 			timeOut = lightTimer();
 			lightOff(activeLight);
 		}, timeOut);
+	} else {
+		lights.forEach(light => {
+			light.classList.add("disable");
+		});
 	}
 }
 

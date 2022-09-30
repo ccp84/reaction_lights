@@ -57,6 +57,10 @@ h1, h2 {
     border-radius: 50%;
 }
 
+.light.disable {
+    pointer-events: none;
+}
+
 /* Class for JS to use to turn light button divs to 'on' */
 .light_on {
     background-color: var(--on-colour);
