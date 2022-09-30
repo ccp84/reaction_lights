@@ -31,6 +31,10 @@ An error was recorded for using a `<ul>` tag within a `<span>`
 
 This was cleared by changing the `<span>` to a `<div>` element.
 
+3 warnings remain for using semantic tags without headings. I have used semantic tags to give structure to the html layout of the game, no headings are necessary for these sections but section tags are better than divs in these instances.
+
+![HTML validation screenshot](documentation/testing/html_clear.png)
+
 ### [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fccp84.github.io%2Freaction_lights%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 CSS validation was clear on the first time of running. 
