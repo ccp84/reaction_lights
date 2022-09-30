@@ -19,7 +19,7 @@
 
 During project development I have used GitHub Issues to track and monitor bug fixes. Closed issues along with their fixes can be found here https://github.com/ccp84/reaction_lights/issues?q=is%3Aissue+is%3Aclosed
 
-
+![Issues board](documentation/testing/issues.png)
 
 ## Code Validation
 
