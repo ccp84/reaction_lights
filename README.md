@@ -131,6 +131,7 @@ When a red or blue light is hit, a modal box appears informing the player that t
 * [GitHub](https://github.com/) - Used for version control during project development and cloud hosting of project code.
 * Git - Version control technology behind Github.
 * CSS Grid - Functionality used to allow responsive layout design. 
+* CSS Root variables - Used for colour switching functionality of the game.
 * [Github Projects](https://github.com/users/ccp84/projects/1/views/1) - Used to track completion of project components.
 * [Github Issues](https://github.com/ccp84/reaction_lights/issues?q=is%3Aissue+is%3Aclosed) - Used to track code errors and progress on bug fixes.
 * Chrome DevTools - Used for under construction checking of code output and console logs. 
