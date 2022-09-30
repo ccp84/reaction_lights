@@ -19,9 +19,11 @@
 
 During project development I have used GitHub Issues to track and monitor bug fixes. Closed issues along with their fixes can be found here https://github.com/ccp84/reaction_lights/issues?q=is%3Aissue+is%3Aclosed
 
+
+
 ## Code Validation
 
-### W3C Validator
+### [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fccp84.github.io%2Freaction_lights%2F)
 
 An error was recorded for using a `<ul>` tag within a `<span>` 
 
@@ -29,15 +31,19 @@ An error was recorded for using a `<ul>` tag within a `<span>`
 
 This was cleared by changing the `<span>` to a `<div>` element.
 
-### Jigsaw Validator
+### [Jigsaw Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fccp84.github.io%2Freaction_lights%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
 CSS validation was clear on the first time of running. 
 
 ![CSS Validation screenshot](documentation/testing/css_validation.png)
 
-### Jshint Validator
+### [Jshint Validator](https://jshint.com/)
 
-## Responsiveness
+JavaScript validation was clear.
+
+![JSHint Validation](documentation/testing/jshint.png)
+
+## Responsiveness - [Lighthouse Validator](https://web.dev/measure/?url=https%3A%2F%2Fccp84.github.io%2Freaction_lights%2F)
 
 Media queries work for the game to allow for the best display on differing viewport widths. As standard, a 2 x 2 CSS grid is diplayed for devices under 600px in width and has been tested as working down to screens 320px in width. A media query changes the grid display to a 4 x 4 display for screens above 600px in width this is tested as working up to 991px width. The final breakpoint is tested as working for screen widths over 992px and produces a grid 3 x 3 in size.
 
