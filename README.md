@@ -168,3 +168,4 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 * Sniglet font used from [Google Fonts](https://fonts.google.com/specimen/Sniglet).
 * Code for getting the currently checked radio button used from [Stack Overflow](https://stackoverflow.com/questions/9618504/how-to-get-the-selected-radio-button-s-value).
 * Tutorial for using root variables in CSS followed from [W3 Schools](https://www.w3schools.com/css/css3_variables.asp).
+* Background image design from [Canva](https://www.canva.com/design/DAFMBfJP2s4/yP-TxylKcBElJeP74IlmMg/edit).
