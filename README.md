@@ -54,6 +54,7 @@ The full desktop game features a 3 column CSS grid and 9 buttons. This view appe
 
 ### Starting And Ending The Game
 
+![Start button](documentation/testing/start.png)
 Gameplay is triggered from the startgame button. Event listeners are attached to the start button and all of the light instances. 
 The start button triggers the `resetScore()` function to be run first to ensure the score is reset to zero, it also sets the `endGame` flag to false to tell the `lightOn()` function that it should run when called. The `lightOn()` function is the final thing that is called when the game is started, this starts game play.
 Event listeners added to the light instances on loading look for clicks on green/yellow lights and increment the score in this scenario. If the case of a red/blue light being clicked occurs, the `endGame` flag is set to true to stop game play, the `highestScore()` function is called to check and display the highest score for this session of game play on screen next to the current score for the round, and then the `alertModal()` function is called to display a message letting the user know they hit a light in the off state and what their finishing score was. 
@@ -86,6 +87,7 @@ A catch is included at the end of the if statement incase of no game mode being 
 
 ### Light On Function (Main game play)
 
+![Light on screenshot](documentation/testing/light_on.png)
 Main game play is achieved by the `lightOn` function. This function first of all selects a random number from the lights node list which is called from the DOM and stored in the variable `lights`. It does this by using `Math.random` and multiplying that by `lights.length`. This time as the light needs to be an integer, `Math.floor` is also used. Next the random light div that has been selected is assigned to the variable `activeLight`, and the class `light_on` is added to turn it green. 
 
 After an amount of time determined by the function `lightTimer`, `lightOff` is called to remove the `light_on` class and return the light to red again. I used `setTimeOut` code from [Stack Overflow](https://stackoverflow.com/questions/17883692/how-to-set-time-delay-in-javascript) to implement the delay between turning the light on and off.
@@ -96,31 +98,38 @@ The function to retun the light to red simply calls `activeLight.classList.remov
 
 ### Increment score function
 
+![Score function screenshot](documentation/testing/score.png)
 `addScore` is triggered based on the `if` statement in the main game loading sequence. When a player hits a light whilst in the on state, `addScore` fetches the current number stored in the HTML element with the ID of score and increments it by 1, before writing it back to the inner HTML of that same element to display the updated score tally to the player on screen. 
 
 ### Reset score function
 
+![Reset score screenshot](documentation/testing/reset_score.png)
 `resetScore` is triggered either when the player starts a new game. The function fetches the current number stored in the HTML elements with the ID of score and over writes it with 0 before writing the new value back to the DOM.
 
 ### Rules Button
 
+![Rules modal](documentation/testing/rules.png)
 The rules for the game are designed as a modal popup. I used code from W3 schools to implement this feature, making changes to the styling to match the overall theme of the game. The original tutorial for this feature can be found [here](https://www.w3schools.com/howto/howto_css_modals.asp). This code used older `var` and `onClick` code, and so I have updated these instances with `let` and `addEventListener` code to ensure the coding is up to date and future proof. 
 
 ### Start Button
 
+![Start game](documentation/testing/firefox.png)
 The game is not active upon loading the webpage, the user triggers this by selecting the start game button at the bottom of the page. There is an event listener attached to the start button that calls the `lightOn()` function to start the game loop running. This allows the player some element of control over the game and gives a similar feel to not having music and sound instantly playing at you when you load a webpage, the lights of the game do not instantly start flashing upon loading the page for the first time for a better user experience.
 
 ### Highest Score Function
 
+![High score screenshot](documentation/testing/high_score.png)
 The highest score function fetches the values stored in the HTML elements with ID of score (the current score) and high_score. Compares the two. And if the current score is higher than the stored highest score, over writes the stored highest score. `parseInt()` was needed to convert the HTML elements into numbers before running the if statement as both values are returned as strings when fetching from the DOM initially. When running the if statement on the values as strings, 10 is returned as a lower value than 9. 
 
 ### Root Variables for Colour Changes
 
+![Game colour changes](documentation/testing/responsive_screenshot.png)
 Due to the main colours of the game not being suitable for red/green colour blindness, I included the option for users to switch the theme to yellow/blue which are more suitable. This is achieved by setting the colours as root variables rather than the rgb values in the css file. 
 An event listener on the radio buttons triggers the change when a user clicks to switch between colour schemes. 
 
 ### Game end modal function
 
+![Game end modal](documentation/testing/game_end.png)
 When a red or blue light is hit, a modal box appears informing the player that they hit a red/blue light and what their final score was for that round. I used the base code from the W3 Schools tutorial to build the modal popup, and modified it to be called by a function rather than activated by a button click. The styling elements have been re used to avoid duplicating code in the stylesheet, and to ensure a continuation of the game theme. 
 
 ## Technologies Used
