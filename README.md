@@ -130,7 +130,7 @@ An event listener on the radio buttons triggers the change when a user clicks to
 ### Game end modal function
 
 ![Game end modal](documentation/testing/game_end.png)
-When a red or blue light is hit, a modal box appears informing the player that they hit a red/blue light and what their final score was for that round. I used the base code from the W3 Schools tutorial to build the modal popup, and modified it to be called by a function rather than activated by a button click. The styling elements have been re used to avoid duplicating code in the stylesheet, and to ensure a continuation of the game theme. 
+When a red or blue light is hit, a modal box appears informing the player that they hit a red/blue light and what their final score was for that round. I used the base code from the [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) tutorial to build the modal popup, and modified it to be called by a function rather than activated by a button click. The styling elements have been re used to avoid duplicating code in the stylesheet, and to ensure a continuation of the game theme. 
 
 ## Technologies Used
 
