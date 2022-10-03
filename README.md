@@ -142,7 +142,9 @@ When a red or blue light is hit, a modal box appears informing the player that t
 * CSS Grid - Functionality used to allow responsive layout design. 
 * CSS Root variables - Used for colour switching functionality of the game.
 * [Github Projects](https://github.com/users/ccp84/projects/1/views/1) - Used to track completion of project components.
+![Completed project board](documentation/testing/project_board.png)
 * [Github Issues](https://github.com/ccp84/reaction_lights/issues?q=is%3Aissue+is%3Aclosed) - Used to track code errors and progress on bug fixes.
+![Closed issues](documentation/testing/issues.png)
 * Chrome DevTools - Used for under construction checking of code output and console logs. 
 * [Canva](https://www.canva.com/) - Background image design.
 * Paint.NET - Image manipulation and resizing.
